@@ -1,0 +1,51 @@
+﻿@model WebApiCapacitacion.Models.Entities.EMPLEADOS
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EMPLEADOS</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EMP_NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMP_NOMBRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMP_DIRECCION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMP_DIRECCION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMP_TELEFONO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMP_TELEFONO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMP_CEDULA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMP_CEDULA)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EMP_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
